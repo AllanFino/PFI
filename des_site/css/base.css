@@ -1,0 +1,32 @@
+.container{
+background-color: aqua;
+
+}
+
+.container-navbar{
+background-color: blanchedalmond;
+height: auto;
+align-items: center;
+align-content: center;
+align-content: center;
+display: grid;
+grid-template-columns: 150px auto 80px auto;
+
+}
+
+#img-perfil{
+height: 40px;
+
+
+}
+#perfil{
+align-items: center;
+align-self: center;
+align-content: center;
+
+}
+#aba-pesquisar{
+border-style: hidden;
+border-radius: 40px;
+
+}

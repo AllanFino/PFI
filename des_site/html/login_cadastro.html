@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- título do login-->
+        <title>Login</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+            <!-- importação do css-->
+        <link rel="stylesheet" href="../css/login_cadastro.css">
+    </head>
+
+    <body>
+        <!--iniciação do container -->
+        <div class="container" id="container">
+            <!-- container para o formulário do cadastro-->
+            <div class="formulario-container cadastro">
+                 <!-- inicío do formulário de cadastro-->
+                <form action="#">
+                    <h1>Criar Conta</h1>
+                    <!-- ícones para auxiliar no cadastro-->
+                    <div class="icones-sociais">
+                        <a href="#" class="icone"><i
+                                class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#" class="icone"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="icone"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="#" class="icone"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <!-- formulário para o cadastro-->
+                    <span>Ou use seu email para cadastro</span>
+                    <input type="text" placeholder="Nome">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Senha">
+                    <div class="opcao-usu">
+                        <!-- verificação se é professor ou aluno-->
+                    <input type="radio" placeholder="usuario" name="op-usu" value="aluno">
+                    <label for="usuario">Usuário</label>
+                    <input type="radio" placeholder="Professor"name="op-usu" value="prof">
+                    <label for="usuario">Professor</label>
+                </div>
+                <!--botão de cadastro-->
+                    <button>Cadastrar-se</button>
+                </form>
+            </div>
+             <!-- container para o formulário de login-->
+            <div class="formulario-container login">
+                 <!-- inicío do formulário de login-->
+                <form action="#">
+                    <h1>Fazer Login</h1>
+                    <!-- ícones para auxiliar no cadastro-->
+                    <div class="icones-sociais">
+                        <a href="#" class="icone"><i
+                                class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#" class="icone"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="icone"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="#" class="icone"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <!-- formulário para o login-->
+                    <span>Ou use seu email e senha para fazer Login</span>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Senha">
+                    <!-- link para recuperação de senha-->
+                    <a href="#">Esqueceu Sua Senha?</a>
+                    <!-- botão de login-->
+                    <button>Fazer Login</button>
+                </form>
+            </div>
+
+            <!-- container sobreposto-->
+            <div class="toggle-container">
+                <!--container com os componentes sobrepostos-->
+                <div class="toggle">
+                    <!-- container com os componentes da esquerda-->
+                    <div class="toggle-panel toggle-esquerda">
+                        <h1>
+                            Bem vindo a HyperArt!
+                        </h1>
+                        <p>Se você ja possue uma conta, faça login</p>
+                        <!-- botão para movimentar o componente e mostrar as informações de login-->
+                        <button class="esconder" id="mostrar-login">Fazer
+                            Login</button>
+                    </div>
+                    <!-- container com os componentes da esquerda-->
+                    <div class="toggle-panel toggle-direita">
+                        <h1>Bem vindo De Volta!</h1>
+                        <p>
+                            Se você ainda não tem uma conta, registre-se
+                        </p>
+                        <!-- botão para movimentar o componente e mostrar as informações de cadastro-->
+                        <button class="esconder" id="mostrar-cadastro">Realizar
+                            Cadastro</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- importação do javascript-->
+        <script src="../js/login_cadastro.js">
+        </script>
+    </body>
+</html>
