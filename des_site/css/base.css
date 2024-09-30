@@ -1,32 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .container{
 background-color: aqua;
 
 }
+.container-navbar img{
+    width: 50px;
+}
 
 .container-navbar{
-background-color: blanchedalmond;
-height: auto;
-align-items: center;
-align-content: center;
-align-content: center;
-display: grid;
-grid-template-columns: 150px auto 80px auto;
-
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
 }
 
-#img-perfil{
-height: 40px;
-
-
+.searchbar input{
+    position: relative;
+    outline: none;
+}
+.searchbar img{
+    width: 32px;
+    position: absolute;
+    left: 1020px;
+    top:33px;
 }
 #perfil{
-align-items: center;
-align-self: center;
-align-content: center;
-
+    align-items: center;
+    align-self: center;
+    align-content: center;
 }
 #aba-pesquisar{
-border-style: hidden;
-border-radius: 40px;
+    width: 600px;
+    border:none;
+    border-radius: 20px;
+    padding: 10px;
+}
 
+/*seção de videos*/
+
+#lista-videos{
+    margin-top: 50px;
+    margin-left: 130px;
+}
+
+#lista-videos div.video{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+img.thumb{
+    width: 300px;
+    border: 1px solid #000;
+}
+div.info{
+    display: flex;
+    align-items: center;
+    gap:10px
+}
+
+div.info img{
+    width: 40px;
+}
+
+div.info p{
+    font-size: 18px;
+    font-weight: 600;
 }
